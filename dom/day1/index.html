@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to DOM</h1>
+    <h1 class="test">welcome to Dom</h1>
+    <h1 id="tag">welcome to Dom</h1>
+    <p class="test" id="lol">Welcome to Dom <b>hello</b></p>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, labore.</p>
+    <p >Lorem dipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, labore.</p>
+</body>
+<Script>
+    // let element=document.getElementsByTagName("h1")[0]
+    // let element=document.getElementsByTagName("test")[0]
+    // let element=document.getElementsByid("tag")
+    // let element=document.querySelector(".test")
+    let element=document.querySelector("p.test#lol")
+    // console.log(element);
+    element.innerHTML = element.innerHTML + " Bye Bye <em>CSS</em>"
+    // let element2 = document.querySelectorAll(".test")
+    //    console.log(element2)
+
+    console.log(element);
+</Script>
+</html>

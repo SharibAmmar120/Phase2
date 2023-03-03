@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .styled{
+            background-color: blue;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            font-size: 20px;
+            border-radius: 15px;
+            color: white;
+        }
+    </style>
+</head>
+   <body>
+    <div id="parent">
+    <div id="firstchild">I am firstchild</div>
+    <p id="secondchild">i am secondchild</p>
+    <h3>living barely</h3>
+    <h1 class="forth"> Hello world</h1>
+    <p class="last styled">i am the last child</p>
+    <button id="main" value="I was clicked" onclick="main()">click here</button>
+    </div>
+</body>
+<script>
+    let last=document.querySelector(".last")
+    let parent=documenlet.querySelector("#parent")
+    let firstchild=documenlet.querySelector("#firstchild")
+    let ele=document.createElement("h1")
+    ele.innerHTML="<i>This is italic </i>"
+    last.append(ele)
+    parent.insertBefore(ele,firstchild)
+    let forth=document.querySelector(".forth")
+    forth.remove()
+    let btn=document.querySelector("#main")
+    btn.classList.add("styled")
+
+    // btn.classList.remove("styled")
+    console.log(btn.classList);
+
+    // function main(){
+    //     let btn=document.querySelector("#main")
+    //     btn.classList.toggle("styled")
+    // }
+
+    btn.addEventListener("click",(e)=>{
+    console.log(e.target.value);
+    btn.classList.toggle("styled")
+    })
+
+</script>
+</html>

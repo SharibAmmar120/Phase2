@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="this" hidden>Change this Tag's Style</p>
+    <button>change</button>
+</body>
+<script>
+    let para = document.querySelector("#this")
+    let btn = document.querySelector("button");
+    btn.addEventListener("click",()=>{
+        // para.style.backgroundColor = "green"
+        // para.style.fontSize = "40px"
+        // console.log(para.getAttribute("id"));
+        para.removeAttribute("hidden")
+})
+</script>
+</html>
