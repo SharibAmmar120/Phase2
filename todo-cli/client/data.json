@@ -1,0 +1,16 @@
+[
+    {
+        "username": "sharib",
+        "email": "sharib@gmail.com",
+        "phone": 912012903,
+        "location": "kasdjhka",
+        "password": "sharib",
+        "todo": [
+            {
+                "todoName": "Ammar",
+                "isCompleted": true,
+                "task_id": "ArknrsMiTv"
+            }
+        ]
+    }
+]
