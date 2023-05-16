@@ -5,7 +5,7 @@ import randomStringGenerator from "../utils/randomString.js"
 
 async function editTodo(email) {
     try {
-        console.clear()//Every single time main function is called it will clear the everything in terminal
+        console.clear()
         console.log(chalk.green("*************************************************"));
         console.log("\t\t EDIT TODO CLI \t\t");
         console.log(chalk.green("*************************************************"));
@@ -50,5 +50,5 @@ async function editTodo(email) {
         console.log(error);
     }
 }
-editTodo("sharib@gmail.com")
+// editTodo("sharib@gmail.com")
 export default editTodo

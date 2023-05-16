@@ -6,6 +6,8 @@ import { Spinner } from "cli-spinner"
 import { setTimeout } from "timers/promises" 
 import { loading } from "../utils/loading.js"
 import createTodo from "./createTodo.js"
+import editTodo from "./editTodo.js"
+import getallTodo from "./getallTodo.js"
 
 
 async function loggedIn(email){
@@ -40,11 +42,11 @@ async function loggedIn(email){
                     await createTodo(email)
                     break;
                 case 2:
-                    console.log("Get all Todo");
-                    // await login();
+                    await getallTodo(email)
+                    
                     break;
                 case 3:
-                    console.log("Edit todo");
+                    await editTodo(email)
                     break;
                
             }

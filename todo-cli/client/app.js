@@ -8,6 +8,7 @@ import { loading } from "./utils/loading.js"
 import userRegister from "./user/registerUser.js"
 import login from "./user/login.js"
 import createTodo from "./todo/createTodo.js"
+import deleteUser from "./user/delete.js"
 
 async function main() {
     try {
@@ -43,7 +44,8 @@ async function main() {
                     await login();
                     break;
                 case 3:
-                    console.log("User Deletion");
+                    await deleteUser()
+                    // console.log("User Deletion");
                     break;
                
             }
